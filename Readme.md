@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Кирилл Кириллов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2352053).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 
 ---
 
