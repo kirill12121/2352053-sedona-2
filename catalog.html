@@ -20,7 +20,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" aria-current href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" aria-current="page" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -48,7 +48,7 @@
             <a class="breadcrumbs-link" href="#">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" aria-current href="catalog.html">Гостиницы</a>
+            <a class="breadcrumbs-link" aria-current="page" href="catalog.html">Гостиницы</a>
           </li>
         </ol>
       </header>
@@ -124,98 +124,106 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
         </form>
-        <a class="catalog-view catalog-view-active" href="catalog.html?view=tile">Плитками</a>
-        <a class="catalog-view " href="catalog.html?view=card">По одной</a>
-        <a class="catalog-view " href="catalog.html?view=list">Списком</a>
+        <ul class="view-list">
+          <li class="view-item"><a class="catalog-view catalog-view-active" href="catalog.html?view=tile">Плитками</a>
+          </li>
+          <li class="view-item"><a class="catalog-view " href="catalog.html?view=card">По одной</a></li>
+          <li class="view-item"><a class="catalog-view " href="catalog.html?view=list">Списком</a></li>
+        </ul>
       </section>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <a class="catalog-card-link" href="#">
-            <img class="catalog-photos" src="images/hotel-1.jpg" width="300" height="212"
-              alt="Вид на ночное небо между Красными скалами">
-            <h3 class="catalog-card-title">Amara Resort & Spa</h3>
-          </a>
-          <p>
-            <span class="card-description">Гостиница</span>
-            <span class="card-price">От 4000 ₽</span>
-          </p>
-          <a class="more-button" href="#">Подробнее</a>
-          <button class="favourite-card">В избранное</button>
-          <p class="stars">
-            <span class="visually-hidden">Отель 4 звезды</span>
-          </p>
-          <p class="rating">Рейтинг: 8,5</p>
-        </li>
-        <li class="catalog-item">
-          <a class="catalog-card-link" href="#">
-            <img class="catalog-photos" src="images/hotel-2.jpg" width="300" height="212"
-              alt="Вид на Кафедральную гору">
-            <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
-          </a>
-          <p>
-            <span class="card-description">Гостиница</span>
-            <span class="card-price">От 5000 ₽</span>
-          </p>
-          <a class="more-button" href="#">Подробнее</a>
-          <button class="favourite-card-active">В избранном</button>
-          <p class="stars">
-            <span class="visually-hidden">Отель 4 звезды</span>
-          </p>
-          <p class="rating">Рейтинг: 9,2</p>
-        </li>
-        <li class="catalog-item">
-          <a class="catalog-card-link" href="#">
-            <img class="catalog-photos" src="images/hotel-3.jpg" width="300" height="212" alt="Вид на гору Белл-Рок">
-            <h3 class="catalog-card-title">Desert Quail Inn</h3>
-          </a>
-          <p>
-            <span class="card-description">Гостиница</span>
-            <span class="card-price">От 2500 ₽</span>
-          </p>
-          <a class="more-button" href="#">Подробнее</a>
-          <button class="favourite-card">В избранное</button>
-          <p class="stars">
-            <span class="visually-hidden">Отель 3 звезды</span>
-          </p>
-          <p class="rating">Рейтинг: 6,9</p>
-        </li>
-        <li class="catalog-item">
-          <a class="catalog-card-link" href="#">
-            <img class="catalog-photos" src="images/hotel-4.jpg" width="300" height="212" alt="Вид на каньон Оук-Крик">
-            <h3 class="catalog-card-title">GreenTree Inn</h3>
-          </a>
-          <p>
-            <span class="card-description">Гостиница</span>
-            <span class="card-price">От 1500 ₽</span>
-          </p>
-          <a class="more-button" href="#">Подробнее</a>
-          <button class="favourite-card">В избранное</button>
-          <p class="stars">
-            <span class="visually-hidden">Отель 2 звезды</span>
-          </p>
-          <p class="rating">Рейтинг: 5,0</p>
-        </li>
-      </ul>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
-        </li>
-      </ul>
+      <section class="catalog">
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a class="catalog-card-link" href="#">
+              <img class="catalog-photos" src="images/hotel-1.jpg" width="300" height="212"
+                alt="Вид на ночное небо между Красными скалами">
+              <h3 class="catalog-card-title">Amara Resort & Spa</h3>
+            </a>
+            <p>
+              <span class="card-description">Гостиница</span>
+              <span class="card-price">От 4000 ₽</span>
+            </p>
+            <a class="more-button" href="#">Подробнее</a>
+            <button class="favourite-card">В избранное</button>
+            <p class="stars">
+              <span class="visually-hidden">Отель 4 звезды</span>
+            </p>
+            <p class="rating">Рейтинг: 8,5</p>
+          </li>
+          <li class="catalog-item">
+            <a class="catalog-card-link" href="#">
+              <img class="catalog-photos" src="images/hotel-2.jpg" width="300" height="212"
+                alt="Вид на Кафедральную гору">
+              <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <p>
+              <span class="card-description">Гостиница</span>
+              <span class="card-price">От 5000 ₽</span>
+            </p>
+            <a class="more-button" href="#">Подробнее</a>
+            <button class="favourite-card-active">В избранном</button>
+            <p class="stars">
+              <span class="visually-hidden">Отель 4 звезды</span>
+            </p>
+            <p class="rating">Рейтинг: 9,2</p>
+          </li>
+          <li class="catalog-item">
+            <a class="catalog-card-link" href="#">
+              <img class="catalog-photos" src="images/hotel-3.jpg" width="300" height="212" alt="Вид на гору Белл-Рок">
+              <h3 class="catalog-card-title">Desert Quail Inn</h3>
+            </a>
+            <p>
+              <span class="card-description">Гостиница</span>
+              <span class="card-price">От 2500 ₽</span>
+            </p>
+            <a class="more-button" href="#">Подробнее</a>
+            <button class="favourite-card">В избранное</button>
+            <p class="stars">
+              <span class="visually-hidden">Отель 3 звезды</span>
+            </p>
+            <p class="rating">Рейтинг: 6,9</p>
+          </li>
+          <li class="catalog-item">
+            <a class="catalog-card-link" href="#">
+              <img class="catalog-photos" src="images/hotel-4.jpg" width="300" height="212"
+                alt="Вид на каньон Оук-Крик">
+              <h3 class="catalog-card-title">GreenTree Inn</h3>
+            </a>
+            <p>
+              <span class="card-description">Гостиница</span>
+              <span class="card-price">От 1500 ₽</span>
+            </p>
+            <a class="more-button" href="#">Подробнее</a>
+            <button class="favourite-card">В избранное</button>
+            <p class="stars">
+              <span class="visually-hidden">Отель 2 звезды</span>
+            </p>
+            <p class="rating">Рейтинг: 5,0</p>
+          </li>
+        </ul>
+      </section>
+      <section class="pagination">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current" aria-current="page">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+      </section>
       <section>
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
