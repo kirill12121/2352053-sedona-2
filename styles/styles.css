@@ -133,7 +133,9 @@ body {
     padding: 0;
 }
 
-
+.advantages {
+    background-color: #FFFFFF;
+}
 
 .advantages-list {
     color: #000000;
@@ -144,14 +146,15 @@ body {
     color: #FFFFFF;
 }
 
-.advantages-item:nth-child(2n + 2) {
-    background-color: #83B3D3 12%;
+.advantages-item:nth-child(2n+2) {
     color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item:nth-child(3) {
-    background-color: #83B3D3 20%;
+    background-color: rgba(131, 179, 211, 0.2);
     color: #000000;
+
 }
 
 .invitation {
@@ -193,18 +196,16 @@ body {
     color: #000000;
 }
 
-.reasons-item:nth-child(1)
-{
-background-color: rgba (131, 179, 211, 0.12);
+.reasons-item:nth-child(1) {
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .reasons-item:nth-child(3) {
-    background-color: rgba (131, 179, 211, 0.12);
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .reasons-item:nth-child(2) {
-    background-color: rgba (131, 179, 211, 0.2);
-    color: #333333;
+    background-color: #ffffff;
 }
 
 .best-deal {
@@ -287,6 +288,12 @@ background-color: rgba (131, 179, 211, 0.12);
     height: 14px;
     width: 24px;
     background-repeat: no-repeat;
+}
+
+.partner-logo {
+    background-image: url("../images/logo-partner.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .navigation-link-current:nth-child(3) {
@@ -470,15 +477,17 @@ select {
     color: #FFFFFF;
     background-color: #82B3D3;
 }
+
 .pagination-link {
     color: #FFFFFF;
 }
 
 .pagination-link-current {
-    color:#000000;
+    color: #000000;
 }
+
 .pagination-link-more {
-    color:#000000;
+    color: #000000;
 }
 
 
@@ -506,15 +515,19 @@ select {
     color: #000000;
     background-color: #ffffff;
 }
+
 a {
     text-decoration: none;
 }
-.main-inner a:link > .view-item{
+
+.main-inner a:link > .view-item {
     color: #FFFFFF;
 }
+
 .main-inner a:visited > .button-style {
     color: rgb(85, 26, 139);
 }
+
 .main-inner a:active {
     text-decoration: underline;
 }
