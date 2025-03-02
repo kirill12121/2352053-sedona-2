@@ -25,7 +25,7 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list-user">
+          <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span></a>
@@ -42,81 +42,87 @@
         </nav>
       </header>
 
-      <main data-test="main" class="main-index">
-        <section class="welcome">
-          <h1 class="visually-hidden">Седона - город в Аризоне </h1>
-          <img class="welcome-svg" src="images/welcome.svg" width="458" height="352"
-            alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
-        </section>
-        <section data-test="advantages" class="advantages">
-          <p>Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</p>
-          <h2>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <h3>Настоящий городок</h3>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img class="advantages-photo-1" src="images/index-image-1.jpg" width="800" height="385"
-                alt="Ресторан в городе Седона">
-            </li>
-            <li class="advantages-item">
-              <h3>Небольшая площадь</h3>
-              <p>Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="advantages-item">
-              <h3>Красивая дорога</h3>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="advantages-item">
-              <h3>Мало туристов</h3>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-            <li class="advantages-item">
-              <img class="advantages-photo-2" src="images//index-image-2.jpg" width="800" height="385"
-                alt="Каменный мост в скалах из красного песчаника в Седоне">
-              <h3>Там есть мост дьявола</h3>
-              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </li>
-          </ul>
-        </section>
-        <section class="invitation">
-          <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p>Опытный персонал и качественное обслуживание!</p>
-          <ul class="reasons-list">
-            <li class="reasons-item">
-              <h3>Жильё</h3>
-              <p class="reasons-text">Рекомендуем пожить в настоящем мотеле,
-                всё как в кино!</p>
-            </li>
-            <li class="reasons-item">
-              <h3>Еда</h3>
-              <p class="reasons-text">Всегда заказывайте
-                топовый фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="reasons-item">
-              <h3>Сувениры</h3>
-              <p class="reasons-text">Не только китайского,
-                но и настоящего местного производства!</p>
-            </li>
-          </ul>
-        </section>
-        <section class="best-deal">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button search">Поиск гостиницы в Седоне</button>
-        </section>
-        <section data-test="subscribe" class="mailing">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="subscribe-email">Укажите ваш e-mail</label>
-            <div class="text-field-group">
-              <input class="text-field" type="text" id="subscribe-email" name="user-email" placeholder="Ваш e-mail"
-                required>
-              <button class="button subscribe" type="submit">Подписаться</button>
-            </div>
-          </form>
-        </section>
+      <main class="main-container main-index">
+        <div class="page-container">
+          <section class="welcome">
+            <h1 class="visually-hidden">Седона - город в Аризоне </h1>
+            <img class="welcome-svg" src="images/welcome.svg" width="458" height="352"
+              alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+          </section>
+          <section data-test="advantages" class="advantages">
+            <p>Седона — небольшой городок в Аризоне,
+              заслуживающий большего!</p>
+            <h2>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <div>
+                  <h3>Настоящий городок</h3>
+                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img class="advantages-photo-1" src="images/index-image-1.jpg" width="800" height="385"
+                  alt="Ресторан в городе Седона">
+              </li>
+              <li class="advantages-item">
+                <h3>Небольшая площадь</h3>
+                <p>Все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="advantages-item">
+                <h3>Красивая дорога</h3>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="advantages-item">
+                <h3>Мало туристов</h3>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+              <li class="advantages-item">
+                <img class="advantages-photo-2" src="images//index-image-2.jpg" width="800" height="385"
+                  alt="Каменный мост в скалах из красного песчаника в Седоне">
+                <div>
+                  <h3>Там есть мост дьявола</h3>
+                  <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="invitation">
+            <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p>Опытный персонал и качественное обслуживание!</p>
+            <ul class="reasons-list">
+              <li class="reasons-item">
+                <h3>Жильё</h3>
+                <p class="reasons-text">Рекомендуем пожить в настоящем мотеле,
+                  всё как в кино!</p>
+              </li>
+              <li class="reasons-item">
+                <h3>Еда</h3>
+                <p class="reasons-text">Всегда заказывайте
+                  топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="reasons-item">
+                <h3>Сувениры</h3>
+                <p class="reasons-text">Не только китайского,
+                  но и настоящего местного производства!</p>
+              </li>
+            </ul>
+          </section>
+          <section class="best-deal">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <button class="button search">Поиск гостиницы в Седоне</button>
+          </section>
+          <section data-test="subscribe" class="mailing">
+            <h2>Подпишитесь на рассылку</h2>
+            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="subscribe-email">Укажите ваш e-mail</label>
+              <div class="text-field-group">
+                <input class="text-field" type="text" id="subscribe-email" name="user-email" placeholder="Ваш e-mail"
+                  required>
+                <button class="button subscribe" type="submit">Подписаться</button>
+              </div>
+            </form>
+          </section>
+        </div>
       </main>
       <footer data-test="footer" class="page-footer">
         <div class="social-network">
