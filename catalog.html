@@ -9,39 +9,39 @@
 
   <body>
     <div class="container">
-      <header data-test="header" class="page-header">
+      <header class="page-header">
+        <a class="navigation-logo" href="index.html" aria-current="page">
+          <img class="page-header-logo" alt="Логотип города Седона" src="images/logo.svg" width="140" height="70">
+        </a>
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" alt="Логотип города Седона" src="images/logo.svg" width="140" height="70">
-          </a>
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li class="navigation-list-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-list-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-list-item">
               <a class="navigation-link-current" aria-current="page" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list-user">
-            <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Поиск</span></a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Избранное</span>
-                <span class="likes-number">21</span>
-              </a>
-            </li>
-          </ul>
-          <div>
-            <button class="button navigation">ХОЧУ СЮДА!</button>
-          </div>
         </nav>
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="likes-number">21</span></a>
+          </li>
+        </ul>
+        <div>
+          <button class="button desire">ХОЧУ СЮДА!</button>
+        </div>
       </header>
+
       <main class="main-container main-inner">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -53,7 +53,6 @@
               <a class="breadcrumbs-link" aria-current="page" href="catalog.html">Гостиницы</a>
             </li>
           </ol>
-
           <section data-test="filter" class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
@@ -237,6 +236,7 @@
           </section>
         </div>
         <section data-test="subscribe" class=" mailing mailing-catalog">
+          <div class="padding-mail">
           <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -247,6 +247,7 @@
               <button class="button subscribe" type="submit">Подписаться</button>
             </div>
           </form>
+        </div>
         </section>
       </main>
       <footer data-test="footer" class="page-footer">

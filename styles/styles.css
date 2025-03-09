@@ -31,35 +31,43 @@ body {
     color: #333333;
     background-color: #f2f2f2;
 }
-.main-container {
-    flex-grow: 1;
+
+.page-header {
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
 }
 .navigation {
     display: flex;
-    width: 1060px;
     margin: 0 auto;
     padding: 0;
 }
 
 .navigation-list {
     display: flex;
-    margin: 0;
-    max-width: 339px;
     padding: 0;
 }
 
 .navigation-user {
     display: flex;
-    max-width: 132px;
-    margin-left:  auto;
     padding: 0;
+}
+.navigation-logo {
+    display: block;
+    width: 140px;
+    height: 64px;
+}
+.page-header-logo {
+    display: block;
+    width: 140px;
+    height: 70px;
 }
 .page-container {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
-.navigation-item,
+.navigation-list-item,
 .navigation-user-item,
 .view-item,
 .catalog-item,
@@ -70,17 +78,20 @@ body {
     padding: 0;
     margin: 0;
 }
+.advantages {
+    width: 1200px;
+}
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
-
-.advantages-item:nth-child(odd) {
+.advantages-item {
     display: flex;
-    flex-grow: 1;
-    width: 100%;
+}
+.advantages-item:nth-child(odd) {
+flex-grow: 1;
 }
 .advantages-item:nth-child(even) {
     display: flex;
@@ -94,7 +105,19 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+.padding-advantages-item {
+    padding: 102px 85px;
+}
+.padding-reasons-item {
+    padding: 81px 85px;
+}
+.advantages-photo-1, .advantages-photo-2 {
+    display: block;
+    height: 385px;
+}
 .navigation-link {
+    display: block;
+    padding: 20px 15px;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -104,6 +127,8 @@ body {
 }
 
 .navigation-link-current {
+    display: block;
+    padding: 20px 15px;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -156,7 +181,9 @@ body {
     background-color: rgba(229, 229, 229, 1);
     color: rgba(255, 255, 255, 1);
 }
-
+.desire {
+    margin: 12px 0;
+}
 .search {
     font-family: inherit;
     font-weight: 700;
@@ -288,6 +315,7 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
+
 }
 
 .advantages h2 {
@@ -755,4 +783,27 @@ input[type="text"] {
 .social-network-list {
     margin: 0;
     padding: 0;
+}
+
+.padding-best-deal {
+    padding: 96px 304px;
+}
+.padding-mail {
+    padding: 96px 258px;
+}
+.padding-advantages p {
+    padding-left: 290px;
+    padding-right: 290px;
+}
+.padding-advantages h2 {
+    padding-left: 274.5px;
+    padding-right: 274.5px;
+}
+.padding-reasons h2 {
+    padding-left: 347.5px;
+    padding-right: 347.5px;
+}
+.padding-reasons p {
+    padding-left: 355px;
+    padding-right: 355px;
 }
