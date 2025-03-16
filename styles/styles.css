@@ -45,12 +45,15 @@ body {
 
 .navigation-list {
     display: flex;
+    margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .navigation-user {
     display: flex;
     padding: 0;
+    margin: 0;
 }
 .navigation-logo {
     display: block;
@@ -66,6 +69,13 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
+}
+.catalog-list {
+    display: flex;
+}
+.number-field {
+    width: 143px;
+    padding-right: 2px;
 }
 .navigation-list-item,
 .navigation-user-item,
@@ -105,8 +115,20 @@ flex-grow: 1;
     justify-content: center;
     flex-direction: column;
 }
-.padding-advantages-item {
-    padding: 102px 85px;
+.drop-down-list {
+    padding-right: 70px;
+}
+.advantages-item h3{
+    padding-top: 102px;
+    padding-bottom: 62px;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+}
+.advantages-item p{
+    padding-top: 0;
+    padding-bottom: 102px;
+    padding-left: 85px;
+    padding-right: 85px;
 }
 .padding-reasons-item {
     padding: 81px 85px;
@@ -190,7 +212,12 @@ flex-grow: 1;
     font-size: 20px;
     line-height: 180%;
 }
-
+.text-field-group {
+    padding-top: 0;
+    padding-bottom: 104px;
+    padding-left: 258px;
+    padding-right: 258px;
+}
 .subscribe {
     font-size: 20px;
     line-height: 180%;
@@ -245,7 +272,10 @@ flex-grow: 1;
 .apply {
     background-color: rgba(130, 179, 211, 1);
 }
-
+.button-flex {
+    display: flex;
+    flex-direction: column;
+}
 .apply:focus {
     background-color: #68a2ca;
 }
@@ -339,6 +369,7 @@ flex-grow: 1;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    margin: 0;
 }
 
 .advantages-item h3 {
@@ -347,14 +378,9 @@ flex-grow: 1;
     line-height: 28px;
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
 }
 
-.advantages-item p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-}
 
 .welcome {
     background-image: url("../images/divider-hero.svg"), url(../images/hero-img.jpg);
@@ -509,23 +535,6 @@ flex-grow: 1;
     color: rgba(117, 97, 87, 0.3);
 }
 
-.social-network-vk {
-    background-image: url("../images/vk.svg");
-    border: none;
-    background-repeat: no-repeat;
-}
-
-.social-network-tg {
-    background-image: url("../images/tg.svg");
-    border: none;
-    background-repeat: no-repeat;
-}
-
-.social-network-yt {
-    background-image: url("../images/youtube.svg");
-    border: none;
-    background-repeat: no-repeat;
-}
 
 
 .navigation-link-current:nth-child(3) {
@@ -574,14 +583,26 @@ fieldset {
 .catalog-choice {
     color: #000000;
 }
-
+.catalog-flex {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
 .catalog-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 120%;
     text-transform: uppercase;
+    padding-right: 200px;
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+    margin: 0;
 }
-
+.drop-down-list {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 70px;
+}
 select {
     font-weight: 400;
     font-size: 18px;
@@ -621,9 +642,17 @@ select {
     border-width: 1px;
     border-color: #e5e5e5;
 }
-
+.pagination {
+    display: flex;
+    margin: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 400px;
+}
 .pagination-item {
     list-style-type: none;
+    flex-grow: 1;
+    padding-right: 8px;
 }
 
 .pagination-link {
@@ -636,6 +665,8 @@ select {
     color: #ffffff;
     background-color: #82b3d3;
     display: block;
+    min-width: 60px;
+    min-height: 60px;
 }
 
 .pagination-link:focus {
@@ -687,15 +718,40 @@ a {
     font-size: 18px;
     line-height: 24px;
 }
+.catalog-filter-group {
+    padding-right: 70px;
+}
+.catalog-filter-group:nth-last-child(1) {
+    padding-right: 70px;
+}
 
 .catalog-view {
     color: #000000;
 }
-
+.catalog-filter-title {
+    padding-bottom: 32px;
+}
+.catalog-filter-item {
+    padding-bottom: 16px;
+}
+.catalog-filter-list li:nth-last-child(1) {
+    padding-bottom: 73px;
+}
+.breadcrumbs {
+    display: flex;
+    padding-bottom: 40px;
+    padding-left: 0;
+    margin: 0;
+}
 .breadcrumbs-item {
     list-style-type: none;
+    padding-right: 10px;
+    padding-left: 10px;
 }
-
+.breadcrumbs-item:nth-child(1) {
+    min-width: 13px;
+    min-height: 15px;
+}
 .breadcrumbs-link {
     font-weight: 400;
     font-size: 16px;
@@ -714,11 +770,26 @@ a {
 .breadcrumbs-link:active {
     color: rgba(255, 255, 255, 0.3);
 }
+.inner-header {
+    padding-left: 70px;
+    padding-top: 35px;
+    padding-right: 70px;
 
+}
+.inner-header-title {
+    padding-right: 635.6px;
+    padding-bottom: 8px;
+    margin: 0;
+    display: block;
+}
 .container {
     background-color: #ffffff;
     width: 1200px;
     margin: 0 auto;
+    height: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+
 
 }
 
@@ -759,7 +830,22 @@ input[type="text"] {
     font-size: 18px;
     line-height: 133%
 }
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+}
 .catalog-filter-item {
     list-style-type: none;
 }
@@ -781,15 +867,50 @@ input[type="text"] {
     justify-content: space-between;
 }
 .social-network-list {
+    display: flex;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-top: 45px;
 }
-
+.social-network-link {
+    display: block;
+    min-width: 24px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+    padding-left: 11.67px;
+    padding-right: 11.67px;
+}
 .padding-best-deal {
     padding: 96px 304px;
 }
-.padding-mail {
-    padding: 96px 258px;
+.phone-number {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.partner-logo {
+    display: flex;
+    flex-grow: 0;
+}
+.partner-logo-link {
+    display: block;
+    padding-top: 48.5px;
+    padding-right: 70px;
+}
+
+.padding-mail h2{
+    padding-top: 96px;
+    padding-bottom: 20px;
+    padding-left: 398px;
+    padding-right: 398px;
+}
+.padding-mail p{
+    padding-top: 0;
+    padding-bottom: 54px;
+    padding-left: 362.5px;
+    padding-right: 362.5px;
 }
 .padding-advantages p {
     padding-left: 290px;
